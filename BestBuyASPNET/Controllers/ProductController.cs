@@ -15,11 +15,16 @@ public class ProductController : Controller
         _productRepo = productRepo;
     }
     
-    
     // GET
     public IActionResult Index()
     {
         var products = _productRepo.GetAllProducts();
         return View(products);
+    }
+
+    public IActionResult ViewProduct(int id)
+    {
+        var product = _productRepo.GetProduct(id);
+        return View(product);
     }
 }

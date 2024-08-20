@@ -7,4 +7,6 @@ namespace BestBuyASPNET;
 public interface IProductRepository
 {
     IEnumerable<Product> GetAllProducts();
+
+    public Product GetProduct(int productId);
 }

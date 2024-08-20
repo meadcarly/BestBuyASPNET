@@ -48,3 +48,4 @@
 /Users/carlymead/Desktop/repos/BestBuyASPNET/BestBuyASPNET/obj/Debug/net8.0/BestBuyASPNET.pdb
 /Users/carlymead/Desktop/repos/BestBuyASPNET/BestBuyASPNET/obj/Debug/net8.0/BestBuyASPNET.genruntimeconfig.cache
 /Users/carlymead/Desktop/repos/BestBuyASPNET/BestBuyASPNET/obj/Debug/net8.0/ref/BestBuyASPNET.dll
+/Users/carlymead/Desktop/repos/BestBuyASPNET/BestBuyASPNET/obj/Debug/net8.0/BestBuyASPNET.sourcelink.json
