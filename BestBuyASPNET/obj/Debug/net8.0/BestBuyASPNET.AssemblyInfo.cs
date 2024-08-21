@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BestBuyASPNET")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f7c7ea5315b04ba2673bd005c76a81a09a13a21")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01d21776db646abb088a81cdc58c04db4609febe")]
 [assembly: System.Reflection.AssemblyProductAttribute("BestBuyASPNET")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BestBuyASPNET")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

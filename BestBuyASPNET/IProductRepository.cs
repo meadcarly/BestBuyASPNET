@@ -9,4 +9,6 @@ public interface IProductRepository
     IEnumerable<Product> GetAllProducts();
 
     public Product GetProduct(int productId);
+
+    public void UpdateProduct(Product product);
 }
