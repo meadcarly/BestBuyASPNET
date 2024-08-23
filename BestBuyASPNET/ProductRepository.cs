@@ -1,4 +1,5 @@
 using System.Data;
+using BestBuyASPNET.Models;
 using Dapper;
 
 namespace BestBuyASPNET;
@@ -29,7 +30,31 @@ public class ProductRepository : IProductRepository
 
     public void UpdateProduct(Product product)
     {
+        //Execute update command to the database
         _conn.Execute("UPDATE products SET Name = @name, Price = @price WHERE ProductID = @id",
             new { name = product.Name, price = product.Price, id = product.ProductID });
+    }
+
+    public void InsertProduct(Product productToInsert)
+    {
+        _conn.Execute(
+            "INSERT INTO PRODUCTS (NAME, PRICE, CATEGORYID) VALUES (@name, @price, @categoryId)",
+            new
+            {
+                name = productToInsert.Name, price = productToInsert.Price, categoryId = productToInsert.CategoryID
+            });
+    }
+
+    public IEnumerable<Category> GetCategories()
+    { 
+       return _conn.Query<Category>("SELECT * FROM categories");
+    }
+
+    public Product AssignCategory()
+    {
+        var categoryList = GetCategories();
+        var product = new Product();
+        product.Categories = categoryList;
+        return product;
     }
 }

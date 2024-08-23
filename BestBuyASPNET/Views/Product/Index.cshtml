@@ -1,5 +1,8 @@
 @model IEnumerable<Product>
 
+@{
+    ViewData["Title"] = "Product Inventory";
+}
 <!DOCTYPE html>
 
 <html>
@@ -9,6 +12,9 @@
 <body>
 <div>
     <h2>Products</h2>
+    <div style="display: block">
+        <a href="/Product/InsertProduct/">Create a New Product</a>
+    </div>
     <table class="table">
         <tr>
             <th>Product ID</th>
