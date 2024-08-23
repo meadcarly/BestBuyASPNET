@@ -22,6 +22,9 @@ public interface IProductRepository
     
     //Assign category to product
     public Product AssignCategory();
+
+    public void DeleteProduct(Product product);
+
 }
 
 //SELECT LAST_INSERT_ID();

@@ -58,4 +58,10 @@ public class ProductController : Controller
         var id = _productRepo.InsertProduct(productToInsert);
         return RedirectToAction("ViewProduct", new { id });
     }
+
+    public IActionResult DeleteProduct(Product productToDelete)
+    {
+        _productRepo.DeleteProduct(productToDelete);
+        return RedirectToAction("Index");
+    }
 }
