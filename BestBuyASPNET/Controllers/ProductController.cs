@@ -55,7 +55,7 @@ public class ProductController : Controller
 
     public IActionResult InsertProductToDatabase(Product productToInsert)
     {
-        _productRepo.InsertProduct(productToInsert);
-        return RedirectToAction("Index");
+        var id = _productRepo.InsertProduct(productToInsert);
+        return RedirectToAction("ViewProduct", new { id });
     }
 }

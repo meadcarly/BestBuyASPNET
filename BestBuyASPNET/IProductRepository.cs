@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+
 using BestBuyASPNET.Models;
 
 
@@ -13,10 +14,13 @@ public interface IProductRepository
 
     public void UpdateProduct(Product product);
 
-    public void InsertProduct(Product productToInsert);
+    //Create
+    public int InsertProduct(Product productToInsert);
 
+    //Get ALL
     public IEnumerable<Category> GetCategories();
-
+    
+    //Assign category to product
     public Product AssignCategory();
 }
 
